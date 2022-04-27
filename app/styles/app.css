@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    text-align: center;
+}
+
+/* Header Component */
+.header {
+    background-color: #ededff;
+    color: #fff;
+    padding: 50px 0;
+    -webkit-box-shadow: 0px 2px 11px -10px #000000; 
+    box-shadow: 0px 2px 11px -10px #000000;
+}
+
+.header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
+}
+
+/* Add Form Component */
+.add-form {
+    margin: 20px;
+}
+
+.add-form .todo-input {
+    border: 2px solid #ededff;
+    border-radius: 5px;
+    padding: 15px;
+    width: 40%;
+    background-color: #ededff;
+    font-family: 'Comfortaa', cursive;
+}
+
+.add-form .todo-input:focus{
+    outline: none;
+    border: 2px solid #e6e6ff;
+}
+
+.add-form .todo-btn {
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 2px solid #e6e6ff;
+    border-radius: 5px;
+    color: #777;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-left: -8px;
+}
+
+.add-form .todo-btn:hover {
+    background: #e6e6ff;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.alert-box {
+    padding: 20px;
+    background-color: #ff7377;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+/* List Item Component */
+.list-item {
+    width: 43.5%;
+    position: absolute;
+    margin: 0 -28.5% 0 28.3%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #ededff;
+}
+
+.list-item ul li input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #d5d5d5;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.list-item ul li input[type='checkbox']:after {
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 15px;
+    color: #fff;
+    margin: 5px;
+    position: fixed;
+    display: none;
+}
+
+.list-item ul li input[type='checkbox']:hover {
+    background-color: #a5a5a5;
+}
+
+.list-item ul li input[type='checkbox']:checked {
+    background-color: #5bcd3e;
+}
+
+.list-item ul li input[type='checkbox']:checked:after {
+    display: block;
+}
+
+.list-item ul .checked {
+    text-decoration: line-through;
+    color: #a5a5a5;
+}
+
+.list-item ul .item-checked {
+    background-color: rgb(246, 245, 245);
+}
+
+.list-item ul li{
+    background: #fff;
+    text-align: left;
+    list-style-type: none;
+    padding: 20px 20px 15px 20px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    margin: 3px;
+}
+
+.list-item ul li span {
+    position: relative;
+    top: -6px;
+    font-family: 'Comfortaa', cursive;
+    left: 5px;
+}
+
+.list-item ul li button {
+    font-size: 1.5em;
+    margin: -3px 5px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+}
+
+.list-item ul li .close-btn {color: red}
+.list-item ul li .edit-btn {color: #777}

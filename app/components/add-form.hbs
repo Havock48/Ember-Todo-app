@@ -1,0 +1,11 @@
+<div class="box">
+    {{#if this.missingTitle}}
+        <Alert />
+    {{/if}}
+    <div class="add-form">
+        <form {{on "submit" (fn this.addTodo this.todoTitle)}} id="form">
+            <input {{on 'input' this.handleInput}} value={{this.todoTitle}} type="text" placeholder="Add Todo..." class="todo-input">
+            <input type="submit" class="todo-btn" value="Add" />
+        </form>
+    </div>
+</div>

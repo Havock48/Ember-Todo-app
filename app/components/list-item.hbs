@@ -1,0 +1,15 @@
+<div class="box">
+    <div class="list-item">
+        <ul>
+        {{#each this.todoData.todos as |item|}}
+            <li id="item-list">
+                <input onclick={{action this.isChecked item}} type="checkbox" class="check-box">
+                <span class="{{if item.isChecked 'checked'}}">{{item.title}}</span>
+                <button class="close-btn" onclick={{action this.removeTodo item}} type="button">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </li>
+        {{/each}}
+        </ul>
+    </div>
+</div>
