@@ -7,7 +7,25 @@
 
 .box {
     text-align: center;
+    width: 550px;
+    margin: 30px auto;
 }
+
+@media only screen and (max-width: 550px) {
+    .box {
+       width: 100%;
+    }
+    .add-form .todo-input {
+        max-width: 60%;
+    }
+    .list-item ul li{
+        font-size: 12px;
+    }
+    .list-item ul li button {
+        position: relative;
+        top: 6px;
+    }
+  }
 
 /* Header Component */
 .header {
@@ -16,6 +34,7 @@
     padding: 50px 0;
     -webkit-box-shadow: 0px 2px 11px -10px #000000; 
     box-shadow: 0px 2px 11px -10px #000000;
+    text-align: center;
 }
 
 .header h1 {
@@ -25,15 +44,12 @@
 }
 
 /* Add Form Component */
-.add-form {
-    margin: 20px;
-}
 
 .add-form .todo-input {
     border: 2px solid #ededff;
     border-radius: 5px;
     padding: 15px;
-    width: 40%;
+    width: 81%;
     background-color: #ededff;
     font-family: 'Comfortaa', cursive;
 }
@@ -65,6 +81,7 @@
     padding: 20px;
     background-color: #ff7377;
     color: white;
+    text-align: center;
   }
   
   .closebtn {
@@ -84,12 +101,10 @@
 
 /* List Item Component */
 .list-item {
-    width: 43.5%;
-    position: absolute;
-    margin: 0 -28.5% 0 28.3%;
     border: 2px solid #ddd;
     border-radius: 5px;
     background-color: #ededff;
+    margin: 20px 0;
 }
 
 .list-item ul li input[type='checkbox'] {
@@ -162,4 +177,3 @@
 }
 
 .list-item ul li .close-btn {color: red}
-.list-item ul li .edit-btn {color: #777}
